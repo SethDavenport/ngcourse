@@ -15,7 +15,7 @@ var karmaVendorFiles = [
 gulp.task('karma', rg.karma({
   // files: specify which folders (optional)
   // karmaConf: specify which karma config file (optional)
-  //karmaConf: 'client/testing/karma.conf.js',
+  karmaConf: 'karma.conf.js',
   vendor: karmaVendorFiles
 }));
 

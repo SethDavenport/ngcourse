@@ -11,7 +11,8 @@
   <body ng-app="ngcourse">
     <div>
       <div ng-controller="MainCtrl as main">
-
+        <ngc-user user="main.user"></ngc-user>
+        
         <form
           ng-hide="main.user.isAuthenticated"
           ng-controller="LoginFormCtrl as loginFormCtrl"
@@ -45,9 +46,8 @@
         <hr>
 
         <div ui-view ng-show="main.user.isAuthenticated"></div>
-
-
       </div>
+
     </div>
     <script src="/bower_components/lodash/dist/lodash.js"></script>
     <script src="/bower_components/koast-angular/dist/koast.js"></script>
@@ -62,5 +62,7 @@
     <script src="/app/sections/task-list/task-list-controller.js"></script>
     <script src="/app/sections/task-add/task-add-controller.js"></script>
     <script src="/app/sections/task-edit/task-edit-controller.js"></script>
+
+    <script src="/app/ngcuser-directive.js"></script>
   </body>
 </html>
