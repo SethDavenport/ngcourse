@@ -111,4 +111,4 @@ gulp.task('watch', function() {
   return gulp.watch('./client/**/*.js', ['lint']);
 });
 
-gulp.task('default', ['lint', 'build', 'karma']);
+gulp.task('default', ['lint', 'build', 'karma', 'protractor']);

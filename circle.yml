@@ -1,0 +1,13 @@
+test:
+  pre:
+    # Install and start up webdriver for the protractor tests.
+    - npm install -g protractor
+    - webdriver-manager update
+    - webdriver-manager start:
+        background: true
+
+    # Install http-server and use it to start up the application for the
+    # protractor tests.
+    - npm install -g http-server
+    - http-server client:
+        background: true
