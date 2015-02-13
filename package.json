@@ -6,7 +6,7 @@
   "author": "Yuri Takhteyev <yuri@rangle.io>",
   "license": "MIT",
   "scripts": {
-    "test": "gulp karma",
+    "test": "gulp",
     "postinstall": "bower install"
   },
   "dependencies": {
@@ -38,6 +38,8 @@
     "q": "^1.0.1",
     "sinon": "~1.12.2",
     "supertest": "^0.15.0",
-    "supertest-as-promised": "^1.0.0"
+    "supertest-as-promised": "^1.0.0",
+    "karma-firefox-launcher": "~0.1.4",
+    "karma-phantomjs-launcher": "~0.1.4"
   }
 }

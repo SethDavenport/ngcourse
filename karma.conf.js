@@ -12,7 +12,7 @@ module.exports = function(config) {
     colors: true,
     logLevel: config.LOG_ERROR,
     autoWatch: true,
-    browsers: ['Chrome'], // Alternatively: 'PhantomJS'
+    browsers: ['Chrome', 'Firefox', 'PhantomJS'], // Alternatively: 'PhantomJS'
     captureTimeout: 6000,
     singleRun: false
   });
