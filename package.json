@@ -6,7 +6,8 @@
   "author": "Yuri Takhteyev <yuri@rangle.io>",
   "license": "MIT",
   "scripts": {
-    "test": "gulp karma"
+    "test": "gulp karma",
+    "postinstall": "bower install"
   },
   "dependencies": {
     "gulp": "^3.8.8"
