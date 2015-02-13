@@ -9,10 +9,10 @@ describe('localhost', function() {
     expect(displayName).toEqual('Alice Beeblebrox');
 
     var tasks = element.all(by.repeater('task in taskList.tasks'));
-    expect(tasks.count()).toEqual(6);
+    expect(tasks.count()).toBeGreaterThan(0);
 
     var owners = element.all(by.binding('task.owner'));
-    expect(owners.count()).toEqual(6);
+    expect(owners.count()).toBeGreaterThan(0);
   });
 });
 
