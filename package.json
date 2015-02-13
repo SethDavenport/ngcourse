@@ -5,6 +5,9 @@
   "main": "server/app.js",
   "author": "Yuri Takhteyev <yuri@rangle.io>",
   "license": "MIT",
+  "scripts": {
+    "test": "gulp karma"
+  },
   "dependencies": {
     "gulp": "^3.8.8"
   },
